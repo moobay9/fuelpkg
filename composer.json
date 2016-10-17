@@ -1,0 +1,15 @@
+{
+    "name": "funaffect/fuelpkg",
+    "description" : "Funaffect Origina FuelPHP Package",
+    "type": "fuel-package",
+    "homepage": "https://github.com/m.oobayashi/fuelpkg",
+    "license": "MIT",
+    "version": "0.1",
+    "authors": [
+        {
+            "name": "Funaffect, Inc.",
+            "email": "m.oobayashi@funaffect.jp"
+        }
+    ],
+    "require-all": true
+}
