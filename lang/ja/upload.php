@@ -1,0 +1,22 @@
+<?php
+return array(
+    'error_'.\Upload::UPLOAD_ERR_OK                   => 'ファイルアップロードは成功しています。',
+    'error_'.\Upload::UPLOAD_ERR_INI_SIZE             => 'アップロードされたファイルは、php.ini の upload_max_filesize ディレクティブの値を超えています。',
+    'error_'.\Upload::UPLOAD_ERR_FORM_SIZE            => 'アップロードされたファイルは、HTML フォームで指定された MAX_FILE_SIZE を超えています。',
+    'error_'.\Upload::UPLOAD_ERR_PARTIAL              => 'アップロードされたファイルは一部のみしかアップロードされていません。',
+    'error_'.\Upload::UPLOAD_ERR_NO_FILE              => 'ファイルはアップロードされませんでした。',
+    'error_'.\Upload::UPLOAD_ERR_NO_TMP_DIR           => 'テンポラリフォルダがありません。',
+    'error_'.\Upload::UPLOAD_ERR_CANT_WRITE           => 'ディスクへの書き込みに失敗しました。',
+    'error_'.\Upload::UPLOAD_ERR_EXTENSION            => 'PHP の拡張モジュールがファイルのアップロードを中止しました。',
+    'error_'.\Upload::UPLOAD_ERR_MAX_SIZE             => 'ファイルサイズが規定値を超えています。',
+    'error_'.\Upload::UPLOAD_ERR_EXT_BLACKLISTED      => 'この拡張子は許可されていません。',
+    'error_'.\Upload::UPLOAD_ERR_EXT_NOT_WHITELISTED  => 'この拡張子は許可されていません。',
+    'error_'.\Upload::UPLOAD_ERR_TYPE_BLACKLISTED     => 'このファイルタイプは許可されていません。',
+    'error_'.\Upload::UPLOAD_ERR_TYPE_NOT_WHITELISTED => 'このファイルタイプは許可されていません。',
+    'error_'.\Upload::UPLOAD_ERR_MIME_BLACKLISTED     => 'このMIMEは許可されていません。',
+    'error_'.\Upload::UPLOAD_ERR_MIME_NOT_WHITELISTED => 'このMIMEは許可されていません。',
+    'error_'.\Upload::UPLOAD_ERR_MAX_FILENAME_LENGTH  => 'ファイル名が最大値を超えています。',
+    'error_'.\Upload::UPLOAD_ERR_MOVE_FAILED          => 'ファイルの移動に失敗しました。',
+    'error_'.\Upload::UPLOAD_ERR_DUPLICATE_FILE       => '同名のファイルが既に存在しています。',
+    'error_'.\Upload::UPLOAD_ERR_MKDIR_FAILED         => 'ディレクトリの作成に失敗しました。',
+);
