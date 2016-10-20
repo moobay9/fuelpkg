@@ -12,32 +12,6 @@ class Validation extends Fuel\Core\Validation
         parent::_construct($fieldset);
     }
 
-
-    /**
-     * _validation_registkey_check 認証キーチェック
-     *
-     * @param string $val
-     * @access public
-     * @return bool
-     */
-    public static function _validation_registkey_check($val, $expire = false)
-    {
-        // 存在チェック
-        if ( ! $temp = Model_Crud_Registkey::find_one_by_key($val))
-        {
-            return false ;
-        }
-
-        // 有効期限チェック
-        if ($expire)
-        {
-            return time() <= $temp->limited_at;
-        }
-
-        return true;
-    }
-
-
     /**
      * _validation_unique 重複チェック
      *
