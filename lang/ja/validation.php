@@ -30,7 +30,7 @@ return [
     'user_duplication'           => ':label は既に使用されています',
     'regist_email'               => ':label は登録されていません',
     'valid_keitai_email'         => ':label に携帯電話のアドレスは使用できません',
-    
+    'unique'                     => ':label はすでに登録されています',
     'postal_hyphen'              => ':label が正しい形式ではありません',
     'postal'                     => ':label が正しい形式ではありません',
     'phone_number'               => ':label が正しい形式ではありません',
