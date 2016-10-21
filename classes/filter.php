@@ -25,7 +25,7 @@ class Filter
         if( ! function_exists('mb_convert_kana')) return FALSE;
 
         // 処理
-        return mb_convert_kana($val, 'KVC', Config::get('encoding'));
+        return mb_convert_kana($val, 'KVC', \Config::get('encoding'));
     }
 
 
@@ -43,7 +43,7 @@ class Filter
         if( ! function_exists('mb_convert_kana')) return FALSE ;
 
         // 処理
-        return mb_convert_kana($val, 'a', Config::get('encoding'));
+        return mb_convert_kana($val, 'a', \Config::get('encoding'));
     }
 
 
@@ -149,35 +149,6 @@ class Filter
     public static function remove_primary_school($str)
     {
         return str_replace(array('小学校', 'しょうがっこう'), '', $str);
-    }
-
-
-    /**
-     * delete_expired_registkey 有効期限の切れたレジストキーを削除する
-     * 
-     * @param string $str 
-     * @param string $option table.field の形で記述 
-     * @access public
-     * @return void
-     */
-    public static function delete_expired_registkey($str, $options)
-    {
-        list($table, $field) = explode('.', $options);
-
-        // 存在チェック
-        if ($temp = Model_Registkey::find('all', ['where' => [['email', $str]]]))
-        {
-            // 有効期限チェック
-            foreach ($temp as $key)
-            {
-                if ($key->limited_at < Date::forge()->get_timestamp())
-                {
-                    $key->delete();
-                }
-            }
-        }
-
-        return $str;
     }
 
 
