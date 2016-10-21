@@ -8,7 +8,7 @@
  
 namespace Funaffect;
 
-class Validation extends Fuel\Core\Validation
+class Validation extends \Fuel\Core\Validation
 {
     protected function _construct($fieldset)
     {

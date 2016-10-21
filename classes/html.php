@@ -2,7 +2,7 @@
 
 namespace Funaffect;
 
-class Html extends Fuel\Core\Html
+class Html extends \Fuel\Core\Html
 {
     /**
      * hsc 短縮表記用
