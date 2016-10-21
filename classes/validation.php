@@ -27,8 +27,8 @@ class Validation extends \Fuel\Core\Validation
     {
         list($table, $field) = explode('.', $options);
 
-        $result = DB::select(DB::expr("LOWER (\"$field\")"))
-            ->where($field, '=', Str::lower($val))
+        $result = \DB::select(\DB::expr("LOWER (\"$field\")"))
+            ->where($field, '=', \Str::lower($val))
             ->from($table)
             ->execute();
 
