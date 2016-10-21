@@ -1,4 +1,7 @@
 <?php
+
+namespace Funaffect;
+
 class Html extends Fuel\Core\Html
 {
     /**

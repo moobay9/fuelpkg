@@ -5,6 +5,9 @@
  * バリデーションの拡張（ルール）
  *
  */
+ 
+namespace Funaffect;
+
 class Validation extends Fuel\Core\Validation
 {
     protected function _construct($fieldset)
@@ -264,4 +267,3 @@ class Validation extends Fuel\Core\Validation
 
 
 }
-

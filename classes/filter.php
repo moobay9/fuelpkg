@@ -6,6 +6,9 @@
  *
  * @author Masanori Oobayashi
  */
+
+namespace Funaffect;
+
 class Filter
 { 
     /**
@@ -193,4 +196,3 @@ class Filter
     }
 
 }
-
