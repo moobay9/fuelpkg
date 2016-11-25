@@ -4,7 +4,7 @@
     "type": "fuel-package",
     "homepage": "https://github.com/m.oobayashi/fuelpkg",
     "license": "MIT",
-    "version": "0.2",
+    "version": "0.3",
     "authors": [
         {
             "name": "Funaffect, Inc.",
