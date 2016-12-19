@@ -14,7 +14,7 @@
 
 // \Autoloader::add_core_namespace('Funaffect');
 
-\Autoloader::add_namespace('Aws', APPPATH.'vendor/aws/aws-sdk-php/src/Aws', true);
+// \Autoloader::add_namespace('Aws', APPPATH.'vendor/aws/aws-sdk-php/src/Aws', true);
 
 \Autoloader::add_classes([
     // コアの拡張
