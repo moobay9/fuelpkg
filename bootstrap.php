@@ -18,12 +18,15 @@
 
 \Autoloader::add_classes([
     // コアの拡張
-    'Funaffect\\Controller\\Template' => __DIR__.'/classes/controller/template.php',
-    'Funaffect\\Validation'           => __DIR__.'/classes/validation.php',
-    'Funaffect\\Html'                 => __DIR__.'/classes/html.php',
-    
+    'Funaffect\\Controller\\Template'  => __DIR__.'/classes/controller/template.php',
+    'Funaffect\\Validation'            => __DIR__.'/classes/validation.php',
+    'Funaffect\\Html'                  => __DIR__.'/classes/html.php',
+
     // クラスの追加
-    'Funaffect\\Filter'               => __DIR__.'/classes/filter.php',
-    'Funaffect\\Aws'                  => __DIR__.'/classes/aws.php',
-    'Funaffect\\Aws\\S3'              => __DIR__.'/classes/aws/s3.php',
+    'Funaffect\\Observer_Format'      => __DIR__.'/classes/observer/format.php',
+    'Funaffect\\Observer_Replacement' => __DIR__.'/classes/observer/replacement.php',
+
+    'Funaffect\\Filter'                => __DIR__.'/classes/filter.php',
+    'Funaffect\\Aws'                   => __DIR__.'/classes/aws.php',
+    'Funaffect\\Aws\\S3'               => __DIR__.'/classes/aws/s3.php',
 ]);
