@@ -19,6 +19,7 @@
 \Autoloader::add_classes([
     // コアの拡張
     'Funaffect\\Controller\\Template'  => __DIR__.'/classes/controller/template.php',
+    'Funaffect\\Form'                  => __DIR__.'/classes/form.php',
     'Funaffect\\Validation'            => __DIR__.'/classes/validation.php',
     'Funaffect\\Html'                  => __DIR__.'/classes/html.php',
 
