@@ -35,6 +35,8 @@ return [
     'postal'                     => ':label が正しい形式ではありません',
     'phone_number'               => ':label が正しい形式ではありません',
 
+    'checkbox_require'           => ':label は必須項目です',
+    'checkbox_matched'           => ':label が :param:1 と一致しません',
+
     'duplicate_column'           => ':label が既に使われています',
 ];
-
