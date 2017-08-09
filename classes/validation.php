@@ -5,7 +5,7 @@
  * バリデーションの拡張（ルール）
  *
  */
- 
+
 namespace Funaffect;
 
 class Validation extends \Fuel\Core\Validation
@@ -44,6 +44,8 @@ class Validation extends \Fuel\Core\Validation
      */
     public static function _validation_hiragana($str)
     {
+        if ( ! $str) return true;
+
         return (bool) preg_match('/^[ぁ-ゞ 　〜ー−]+$/u', $str);
     }
 
@@ -56,6 +58,8 @@ class Validation extends \Fuel\Core\Validation
      */
     public static function _validation_katakana($str)
     {
+        if ( ! $str) return true;
+
         return (bool) preg_match('/^[ァ-ヾ 　〜ー−]+$/u', $str);
     }
 
@@ -70,6 +74,8 @@ class Validation extends \Fuel\Core\Validation
      */
     public static function _validation_year_month($str)
     {
+        if ( ! $str) return true;
+
         return (bool) preg_match('/(^$|(19|20|21)[0-9]{2}-[0-9]{1,2})/', $str);
     }
 
@@ -82,6 +88,8 @@ class Validation extends \Fuel\Core\Validation
      */
     public static function _validation_valid_ymd($str)
     {
+        if ( ! $str) return true;
+
         return (bool) preg_match('/(^$|(19|20|21)[0-9]{2}-[0-1][0-9]-[0-3][0-9])/', $str);
     }
 
